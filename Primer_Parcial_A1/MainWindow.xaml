@@ -9,16 +9,10 @@
     <StackPanel>
         <StackPanel>
             <Menu Height="18">
-                <MenuItem Header="_Registros">
-                    <MenuItem x:Name="rPrestamosMenuItem" Header="Registro de préstamos"></MenuItem>
-                    <MenuItem x:Name="rPersonasMenuItem" Header="Registro de personas"></MenuItem>
-                </MenuItem>
+                <MenuItem Header="_Ciudad">
+                    <MenuItem x:Name="rCiudadMenuItem" Header="Registro de Ciudad"></MenuItem>
 
-                <MenuItem Header="_Consultas">
-                    <MenuItem x:Name="cPrestamosMenuItem" Header="Consulta de préstamos"></MenuItem>
-                    <MenuItem x:Name="cPersonasMenuItem" Header="Consulta de personas"></MenuItem>
                 </MenuItem>
-
                 <MenuItem Header="Ayuda">
                     <Menu/>
                 </MenuItem>
