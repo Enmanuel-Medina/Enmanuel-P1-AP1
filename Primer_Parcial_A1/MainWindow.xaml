@@ -6,19 +6,19 @@
         xmlns:local="clr-namespace:Primer_Parcial_A1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <StackPanel>
+    <Grid>
         <StackPanel>
-            <Menu Height="18">
-                <MenuItem Header="_Ciudad">
-                    <MenuItem x:Name="rCiudadMenuItem" Header="Registro de Ciudad"></MenuItem>
-
+          
+            <Menu Height="24" FontSize="15">
+                <MenuItem Header="Registros">
+                    <MenuItem x:Name="rCiudadMenuItem" Click="rCuidadMenuItem_Click" Header="Registrar Ciudad"/>
                 </MenuItem>
+
                 <MenuItem Header="Ayuda">
                     <Menu/>
                 </MenuItem>
             </Menu>
         </StackPanel>
 
-
-    </StackPanel>
+    </Grid>
 </Window>

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Primer_Parcial_A1.UI.Ciudad;
 
 namespace Primer_Parcial_A1
 {
@@ -24,5 +25,9 @@ namespace Primer_Parcial_A1
         {
             InitializeComponent();
         }
-    }
+        public void rCiudadMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            rCiudad rCiudad = new rCiudad();
+            rCiudad.Show();
+        }
 }
