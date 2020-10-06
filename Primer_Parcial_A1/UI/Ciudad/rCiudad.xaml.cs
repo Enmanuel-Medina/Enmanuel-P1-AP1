@@ -14,7 +14,6 @@ namespace Primer_Parcial_A1.UI.Ciudad
         public rCiudad()
         {
             InitializeComponent();
-            ciudad = new rCiudad();
             this.DataContext = ciudad;
         }
         //LIMPIAR
