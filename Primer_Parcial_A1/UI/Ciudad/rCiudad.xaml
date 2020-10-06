@@ -8,43 +8,46 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="rCiudad">
 
-    <StackPanel Margin="50,50,0,0">
-        <!-- ID -->
-        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
-            <Label Content="CiudadId:" Width="120"/>
-            <TextBox x:Name="CiudadIdTextbox" Width="85" Text="{Binding CiudadId}"/>
-            <Button x:Name="BuscarBoton" Width="85" Margin="30,0,0,0" Click="BuscarBoton_Click">
-                <StackPanel Orientation="Horizontal">
-                    <Image Width="18" Height="18" Source="/Images/search.png"/>
-                    <Label Content="Buscar"/>
-                </StackPanel>
-            </Button>
-        </StackPanel>
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10,10,10,10" >
+            <Label Content="Ciudad Id"/>
+            <!--——————————————————————————————————————————————[ BUSCAR ]——————————————————————————————————————————————-->
+            <StackPanel Orientation="Horizontal" Height="30">
+                <TextBox x:Name="CiudadIdTextbox" Text="{Binding CiudadId}" Width="150"/>
+                <Button x:Name="BuscarButton" Margin="100,0,0,0" Width="100" Click="BuscarButton_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Height="30" />
+                        <Label Content="Buscar"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            <!--——————————————————————————————————————————————[ NOMBRE ]——————————————————————————————————————————————-->
+            <Label Content="Nombre" Margin="0,10,0,0" />
+            <TextBox x:Name="NombreTextbox" Text="{Binding Nombre}" Height="25" />
+            <!--——————————————————————————————————————————————[ BOTON NUEVO ]——————————————————————————————————————————————-->
+            <StackPanel Orientation="Horizontal" Margin="0,20,0,0" HorizontalAlignment="Center">
+                <Button x:Name="NuevoButton" Width="100" Click="NuevoButton_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Height="25" />
+                        <Label Content="Nuevo"/>
+                    </StackPanel>
+                </Button>
+                <!--——————————————————————————————————————————————[ BOTON GUARDAR ]——————————————————————————————————————————————-->
+                <Button x:Name="GuardarButton" Margin="30,0,0,0" Width="100" Click="GuardarButton_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Height="30" />
+                        <Label Content="Guardar"/>
+                    </StackPanel>
+                </Button>
+                <!--——————————————————————————————————————————————[ BOTON ELIMINAR ]——————————————————————————————————————————————-->
+                <Button x:Name="EliminarButton" Margin="30,0,0,0" Width="100" Click="EliminarButton_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Height="30" />
+                        <Label Content="Eliminar"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
 
-        <!-- Nombres -->
-        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
-            <Label Content="Nombres:" Width="120"/>
-            <TextBox x:Name="NombresTextBox" Width="200" Text="{Binding Nombres}"/>
         </StackPanel>
-        <!-- Botones -->
-        <StackPanel Orientation="Horizontal">
-            <Button x:Name="NuevoBoton" Width="90" Margin="5,0,0,0" Click="NuevoBoton_Click">
-                <StackPanel Orientation="Horizontal">
-                    <Label Content="Nuevo"/>
-                </StackPanel>
-            </Button>
-            <Button x:Name="GuardarBoton" Width="90" Margin="20,0,0,0" Click="GuardarBoton_Click">
-                <StackPanel Orientation="Horizontal">
-                    <Label Content="Guardar"/>
-                </StackPanel>
-            </Button>
-            <Button x:Name="EliminarBoton" Width="90" Margin="20,0,0,0" Click="EliminarBoton_Click">
-                <StackPanel Orientation="Horizontal">
-                    <Label Content="Eliminar"/>
-                </StackPanel>
-            </Button>
-
-        </StackPanel>
-    </StackPanel>
-
-    </Window>
+    </Grid>
+</Window>

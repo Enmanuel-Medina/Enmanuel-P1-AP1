@@ -30,4 +30,6 @@ namespace Primer_Parcial_A1
             rCiudad rCiudad = new rCiudad();
             rCiudad.Show();
         }
+
+    }
 }

@@ -58,7 +58,7 @@ namespace Primer_Parcial_A1.UI.Ciudad
                     return;
 
                 var paso = Ciudad_BLL.Guardar(ciudad);
-                if (paso)
+                if ((bool)paso)
                 {
                     Limpiar();
                     MessageBox.Show("Transaccion Exitosa!", "Exito", MessageBoxButton.OK, MessageBoxImage.Information);

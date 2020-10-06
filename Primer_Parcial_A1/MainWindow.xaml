@@ -5,14 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Primer_Parcial_A1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Registro" Height="450" Width="800">
     <Grid>
         <StackPanel>
           
             <Menu Height="24" FontSize="15">
                 <MenuItem Header="Registros">
-                    <MenuItem x:Name="rCiudadMenuItem" Click="rCuidadMenuItem_Click" Header="Registrar Ciudad"/>
-                </MenuItem>
+                    <MenuItem x:Name="rCiudadMenuItem" Header="Registro de Ciudad" Click="rCiudadMenuItem_Click"/> > </MenuItem>
+
+              
 
                 <MenuItem Header="Ayuda">
                     <Menu/>
